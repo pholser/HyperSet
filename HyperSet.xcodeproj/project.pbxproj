@@ -7,12 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20B32DB260C757289BC7E9B7 /* Pods_HyperSetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16042031DA50A362DF12139A /* Pods_HyperSetTests.framework */; };
 		2B14379A1CFD0633005B174A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1437991CFD0633005B174A /* AppDelegate.swift */; };
 		2B14379C1CFD0633005B174A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14379B1CFD0633005B174A /* ViewController.swift */; };
 		2B14379F1CFD0633005B174A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B14379D1CFD0633005B174A /* Main.storyboard */; };
 		2B1437A11CFD0633005B174A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1437A01CFD0633005B174A /* Assets.xcassets */; };
 		2B1437A41CFD0633005B174A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1437A21CFD0633005B174A /* LaunchScreen.storyboard */; };
-		2B1437AF1CFD0633005B174A /* HyperSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1437AE1CFD0633005B174A /* HyperSetTests.swift */; };
+		2B2380231CFD07DB00116148 /* characteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380221CFD07DB00116148 /* characteristics.swift */; };
+		2B2380251CFD087800116148 /* set_extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380241CFD087800116148 /* set_extensions.swift */; };
+		2B2380271CFD0A4700116148 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380261CFD0A4700116148 /* Card.swift */; };
+		2B2380291CFD0A7800116148 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380281CFD0A7800116148 /* Deck.swift */; };
+		2B23802B1CFD0AC600116148 /* sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23802A1CFD0AC600116148 /* sets.swift */; };
+		2B23802D1CFD0BE400116148 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23802C1CFD0BE400116148 /* Square.swift */; };
+		2B23802F1CFD0BF500116148 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23802E1CFD0BF500116148 /* Cube.swift */; };
+		2B2380311CFD0C1800116148 /* Hypercube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380301CFD0C1800116148 /* Hypercube.swift */; };
+		2B2380331CFD0C5B00116148 /* building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380321CFD0C5B00116148 /* building.swift */; };
+		2B2380351CFD0CA300116148 /* DeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380341CFD0CA300116148 /* DeckTests.swift */; };
+		2B2380361CFD0D4700116148 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380281CFD0A7800116148 /* Deck.swift */; };
+		2B2380371CFD0D7100116148 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380261CFD0A4700116148 /* Card.swift */; };
+		2B2380381CFD0E4E00116148 /* characteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380221CFD07DB00116148 /* characteristics.swift */; };
+		2B2380391CFD0E6A00116148 /* set_extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380241CFD087800116148 /* set_extensions.swift */; };
+		2B23803A1CFD0E9D00116148 /* sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23802A1CFD0AC600116148 /* sets.swift */; };
+		2B23803B1CFD0EA000116148 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23802C1CFD0BE400116148 /* Square.swift */; };
+		2B23803C1CFD0EA300116148 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23802E1CFD0BF500116148 /* Cube.swift */; };
+		2B23803D1CFD0EA600116148 /* Hypercube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380301CFD0C1800116148 /* Hypercube.swift */; };
+		2B23803E1CFD0EAA00116148 /* building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380321CFD0C5B00116148 /* building.swift */; };
+		2B2380401CFD0FB800116148 /* SetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23803F1CFD0FB800116148 /* SetsTests.swift */; };
+		2B2380421CFD133A00116148 /* Card_arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380411CFD133A00116148 /* Card_arbitrary.swift */; };
+		2B2380441D008E8F00116148 /* BuildingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380431D008E8F00116148 /* BuildingTests.swift */; };
+		88A76EEE6C67B189D188D7C3 /* Pods_HyperSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF768B93F18EEFC5EF41604 /* Pods_HyperSet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16042031DA50A362DF12139A /* Pods_HyperSetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HyperSetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1437961CFD0633005B174A /* HyperSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HyperSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1437991CFD0633005B174A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B14379B1CFD0633005B174A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +58,25 @@
 		2B1437A31CFD0633005B174A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B1437A51CFD0633005B174A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B1437AA1CFD0633005B174A /* HyperSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B1437AE1CFD0633005B174A /* HyperSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperSetTests.swift; sourceTree = "<group>"; };
 		2B1437B01CFD0633005B174A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2380221CFD07DB00116148 /* characteristics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = characteristics.swift; sourceTree = "<group>"; };
+		2B2380241CFD087800116148 /* set_extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = set_extensions.swift; sourceTree = "<group>"; };
+		2B2380261CFD0A4700116148 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2B2380281CFD0A7800116148 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		2B23802A1CFD0AC600116148 /* sets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sets.swift; sourceTree = "<group>"; };
+		2B23802C1CFD0BE400116148 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		2B23802E1CFD0BF500116148 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		2B2380301CFD0C1800116148 /* Hypercube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hypercube.swift; sourceTree = "<group>"; };
+		2B2380321CFD0C5B00116148 /* building.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = building.swift; sourceTree = "<group>"; };
+		2B2380341CFD0CA300116148 /* DeckTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckTests.swift; sourceTree = "<group>"; };
+		2B23803F1CFD0FB800116148 /* SetsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsTests.swift; sourceTree = "<group>"; };
+		2B2380411CFD133A00116148 /* Card_arbitrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_arbitrary.swift; sourceTree = "<group>"; };
+		2B2380431D008E8F00116148 /* BuildingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTests.swift; sourceTree = "<group>"; };
+		5C141EB41385AA3FDDF30A30 /* Pods-HyperSetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSetTests/Pods-HyperSetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		69D76C6D1861DB3E71F2C81F /* Pods-HyperSetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSetTests/Pods-HyperSetTests.release.xcconfig"; sourceTree = "<group>"; };
+		732FC067024756D5C394D592 /* Pods-HyperSet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSet/Pods-HyperSet.debug.xcconfig"; sourceTree = "<group>"; };
+		8BF768B93F18EEFC5EF41604 /* Pods_HyperSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HyperSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45CC748958E2ABDCA9824E2 /* Pods-HyperSet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSet.release.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSet/Pods-HyperSet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A76EEE6C67B189D188D7C3 /* Pods_HyperSet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B32DB260C757289BC7E9B7 /* Pods_HyperSetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +105,8 @@
 				2B1437981CFD0633005B174A /* HyperSet */,
 				2B1437AD1CFD0633005B174A /* HyperSetTests */,
 				2B1437971CFD0633005B174A /* Products */,
+				98209CE28DE6EE66E1A5FFC8 /* Pods */,
+				FCD4311D9978984DA3D28B1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +122,7 @@
 		2B1437981CFD0633005B174A /* HyperSet */ = {
 			isa = PBXGroup;
 			children = (
+				2B1437B91CFD0647005B174A /* Model */,
 				2B1437991CFD0633005B174A /* AppDelegate.swift */,
 				2B14379B1CFD0633005B174A /* ViewController.swift */,
 				2B14379D1CFD0633005B174A /* Main.storyboard */,
@@ -90,10 +136,57 @@
 		2B1437AD1CFD0633005B174A /* HyperSetTests */ = {
 			isa = PBXGroup;
 			children = (
-				2B1437AE1CFD0633005B174A /* HyperSetTests.swift */,
+				2B1437BA1CFD0665005B174A /* Model */,
 				2B1437B01CFD0633005B174A /* Info.plist */,
 			);
 			path = HyperSetTests;
+			sourceTree = "<group>";
+		};
+		2B1437B91CFD0647005B174A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B2380221CFD07DB00116148 /* characteristics.swift */,
+				2B2380241CFD087800116148 /* set_extensions.swift */,
+				2B2380261CFD0A4700116148 /* Card.swift */,
+				2B2380281CFD0A7800116148 /* Deck.swift */,
+				2B23802A1CFD0AC600116148 /* sets.swift */,
+				2B23802C1CFD0BE400116148 /* Square.swift */,
+				2B23802E1CFD0BF500116148 /* Cube.swift */,
+				2B2380301CFD0C1800116148 /* Hypercube.swift */,
+				2B2380321CFD0C5B00116148 /* building.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B1437BA1CFD0665005B174A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B2380341CFD0CA300116148 /* DeckTests.swift */,
+				2B23803F1CFD0FB800116148 /* SetsTests.swift */,
+				2B2380411CFD133A00116148 /* Card_arbitrary.swift */,
+				2B2380431D008E8F00116148 /* BuildingTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		98209CE28DE6EE66E1A5FFC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				732FC067024756D5C394D592 /* Pods-HyperSet.debug.xcconfig */,
+				D45CC748958E2ABDCA9824E2 /* Pods-HyperSet.release.xcconfig */,
+				5C141EB41385AA3FDDF30A30 /* Pods-HyperSetTests.debug.xcconfig */,
+				69D76C6D1861DB3E71F2C81F /* Pods-HyperSetTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCD4311D9978984DA3D28B1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BF768B93F18EEFC5EF41604 /* Pods_HyperSet.framework */,
+				16042031DA50A362DF12139A /* Pods_HyperSetTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B1437B31CFD0633005B174A /* Build configuration list for PBXNativeTarget "HyperSet" */;
 			buildPhases = (
+				C40EA24483523AA208506C7A /* 📦 Check Pods Manifest.lock */,
 				2B1437921CFD0633005B174A /* Sources */,
 				2B1437931CFD0633005B174A /* Frameworks */,
 				2B1437941CFD0633005B174A /* Resources */,
+				118AE9272562F69540A50D8C /* 📦 Embed Pods Frameworks */,
+				F6EE851CFC48B8B4FCEF555E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B1437B61CFD0633005B174A /* Build configuration list for PBXNativeTarget "HyperSetTests" */;
 			buildPhases = (
+				79FA7AB9007860FB0EFAF0DD /* 📦 Check Pods Manifest.lock */,
 				2B1437A61CFD0633005B174A /* Sources */,
 				2B1437A71CFD0633005B174A /* Frameworks */,
 				2B1437A81CFD0633005B174A /* Resources */,
+				088929001CC7A7DEE93183DE /* 📦 Embed Pods Frameworks */,
+				949D6F4966B940F577603487 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,13 +291,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		088929001CC7A7DEE93183DE /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HyperSetTests/Pods-HyperSetTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		118AE9272562F69540A50D8C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HyperSet/Pods-HyperSet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79FA7AB9007860FB0EFAF0DD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		949D6F4966B940F577603487 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HyperSetTests/Pods-HyperSetTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C40EA24483523AA208506C7A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6EE851CFC48B8B4FCEF555E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HyperSet/Pods-HyperSet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B1437921CFD0633005B174A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B23802D1CFD0BE400116148 /* Square.swift in Sources */,
+				2B2380291CFD0A7800116148 /* Deck.swift in Sources */,
+				2B23802B1CFD0AC600116148 /* sets.swift in Sources */,
+				2B2380231CFD07DB00116148 /* characteristics.swift in Sources */,
 				2B14379C1CFD0633005B174A /* ViewController.swift in Sources */,
+				2B2380331CFD0C5B00116148 /* building.swift in Sources */,
+				2B23802F1CFD0BF500116148 /* Cube.swift in Sources */,
+				2B2380271CFD0A4700116148 /* Card.swift in Sources */,
+				2B2380251CFD087800116148 /* set_extensions.swift in Sources */,
 				2B14379A1CFD0633005B174A /* AppDelegate.swift in Sources */,
+				2B2380311CFD0C1800116148 /* Hypercube.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +407,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B1437AF1CFD0633005B174A /* HyperSetTests.swift in Sources */,
+				2B23803A1CFD0E9D00116148 /* sets.swift in Sources */,
+				2B2380391CFD0E6A00116148 /* set_extensions.swift in Sources */,
+				2B2380401CFD0FB800116148 /* SetsTests.swift in Sources */,
+				2B2380381CFD0E4E00116148 /* characteristics.swift in Sources */,
+				2B2380421CFD133A00116148 /* Card_arbitrary.swift in Sources */,
+				2B23803B1CFD0EA000116148 /* Square.swift in Sources */,
+				2B23803C1CFD0EA300116148 /* Cube.swift in Sources */,
+				2B2380361CFD0D4700116148 /* Deck.swift in Sources */,
+				2B2380371CFD0D7100116148 /* Card.swift in Sources */,
+				2B23803E1CFD0EAA00116148 /* building.swift in Sources */,
+				2B23803D1CFD0EA600116148 /* Hypercube.swift in Sources */,
+				2B2380351CFD0CA300116148 /* DeckTests.swift in Sources */,
+				2B2380441D008E8F00116148 /* BuildingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,8 +540,11 @@
 		};
 		2B1437B41CFD0633005B174A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732FC067024756D5C394D592 /* Pods-HyperSet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = HyperSet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pholser.HyperSet;
@@ -338,8 +554,11 @@
 		};
 		2B1437B51CFD0633005B174A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45CC748958E2ABDCA9824E2 /* Pods-HyperSet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = HyperSet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pholser.HyperSet;
@@ -349,20 +568,25 @@
 		};
 		2B1437B71CFD0633005B174A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C141EB41385AA3FDDF30A30 /* Pods-HyperSetTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HyperSetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pholser.HyperSetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HyperSet.app/HyperSet";
 			};
 			name = Debug;
 		};
 		2B1437B81CFD0633005B174A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69D76C6D1861DB3E71F2C81F /* Pods-HyperSetTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HyperSetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pholser.HyperSetTests;
@@ -390,6 +614,7 @@
 				2B1437B51CFD0633005B174A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B1437B61CFD0633005B174A /* Build configuration list for PBXNativeTarget "HyperSetTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +623,7 @@
 				2B1437B81CFD0633005B174A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

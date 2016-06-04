@@ -1,0 +1,12 @@
+PODS:
+  - SwiftCheck (0.6.1)
+
+DEPENDENCIES:
+  - SwiftCheck (~> 0.6.1)
+
+SPEC CHECKSUMS:
+  SwiftCheck: 03fc4cf11802d633d1dcfbc3777f54494bccc950
+
+PODFILE CHECKSUM: 9a0a64b586f7a0e778a6efe9f79d5a2736911bbd
+
+COCOAPODS: 1.0.0
