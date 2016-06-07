@@ -8,6 +8,18 @@ enum Number : Int {
     static let all: Array<Number> = [.Three, .One, .Two]
 }
 
+func + (first: Number, second: Number) -> Number {
+    return Number.init(rawValue: mod3Plus(first.rawValue, second.rawValue))!
+}
+
+func - (first: Number, second: Number) -> Number {
+    return Number.init(rawValue: mod3Minus(first.rawValue, second.rawValue))!
+}
+
+func formASet(first: Number, _ second: Number, _ third: Number) -> Bool {
+    return mod3Plus(first.rawValue, second.rawValue, third.rawValue) == 0
+}
+
 extension Number : CustomStringConvertible {
     var description: String {
         switch (self) {
@@ -27,6 +39,18 @@ enum Shape : Int {
     case Squiggle = 2
     
     static let all: Array<Shape> = [.Oval, .Diamond, .Squiggle]
+}
+
+func + (first: Shape, second: Shape) -> Shape {
+    return Shape.init(rawValue: mod3Plus(first.rawValue, second.rawValue))!
+}
+
+func - (first: Shape, second: Shape) -> Shape {
+    return Shape.init(rawValue: mod3Minus(first.rawValue, second.rawValue))!
+}
+
+func formASet(first: Shape, _ second: Shape, _ third: Shape) -> Bool {
+    return mod3Plus(first.rawValue, second.rawValue, third.rawValue) == 0
 }
 
 extension Shape : CustomStringConvertible {
@@ -50,6 +74,18 @@ enum Shading : Int {
     static let all: Array<Shading> = [.Solid, .Striped, .Open]
 }
 
+func + (first: Shading, second: Shading) -> Shading {
+    return Shading.init(rawValue: mod3Plus(first.rawValue, second.rawValue))!
+}
+
+func - (first: Shading, second: Shading) -> Shading {
+    return Shading.init(rawValue: mod3Minus(first.rawValue, second.rawValue))!
+}
+
+func formASet(first: Shading, _ second: Shading, _ third: Shading) -> Bool {
+    return mod3Plus(first.rawValue, second.rawValue, third.rawValue) == 0
+}
+
 extension Shading : CustomStringConvertible {
     var description: String {
         switch (self) {
@@ -68,6 +104,22 @@ enum Color : Int {
     case Green = 1
     case Purple = 2
     
+    static let all: Array<Color> = [.Red, .Green, .Purple]
+}
+
+func + (first: Color, second: Color) -> Color {
+    return Color.init(rawValue: mod3Plus(first.rawValue, second.rawValue))!
+}
+
+func - (first: Color, second: Color) -> Color {
+    return Color.init(rawValue: mod3Minus(first.rawValue, second.rawValue))!
+}
+
+func formASet(first: Color, _ second: Color, _ third: Color) -> Bool {
+    return mod3Plus(first.rawValue, second.rawValue, third.rawValue) == 0
+}
+
+extension Color : CustomStringConvertible {
     var description: String {
         switch (self) {
             case .Red:
@@ -78,6 +130,4 @@ enum Color : Int {
                 return "purple"
         }
     }
-    
-    static let all: Array<Color> = [.Red, .Green, .Purple]
 }

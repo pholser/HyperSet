@@ -35,6 +35,8 @@
 		2B2380401CFD0FB800116148 /* SetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23803F1CFD0FB800116148 /* SetsTests.swift */; };
 		2B2380421CFD133A00116148 /* Card_arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380411CFD133A00116148 /* Card_arbitrary.swift */; };
 		2B2380441D008E8F00116148 /* BuildingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380431D008E8F00116148 /* BuildingTests.swift */; };
+		2B2380481D05F8CF00116148 /* mod3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380471D05F8CF00116148 /* mod3.swift */; };
+		2B2380491D06037400116148 /* mod3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380471D05F8CF00116148 /* mod3.swift */; };
 		88A76EEE6C67B189D188D7C3 /* Pods_HyperSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF768B93F18EEFC5EF41604 /* Pods_HyperSet.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,7 @@
 		2B23803F1CFD0FB800116148 /* SetsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsTests.swift; sourceTree = "<group>"; };
 		2B2380411CFD133A00116148 /* Card_arbitrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_arbitrary.swift; sourceTree = "<group>"; };
 		2B2380431D008E8F00116148 /* BuildingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTests.swift; sourceTree = "<group>"; };
+		2B2380471D05F8CF00116148 /* mod3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mod3.swift; sourceTree = "<group>"; };
 		5C141EB41385AA3FDDF30A30 /* Pods-HyperSetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSetTests/Pods-HyperSetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		69D76C6D1861DB3E71F2C81F /* Pods-HyperSetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSetTests/Pods-HyperSetTests.release.xcconfig"; sourceTree = "<group>"; };
 		732FC067024756D5C394D592 /* Pods-HyperSet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSet/Pods-HyperSet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 				2B23802E1CFD0BF500116148 /* Cube.swift */,
 				2B2380301CFD0C1800116148 /* Hypercube.swift */,
 				2B2380321CFD0C5B00116148 /* building.swift */,
+				2B2380471D05F8CF00116148 /* mod3.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -393,6 +397,7 @@
 				2B2380291CFD0A7800116148 /* Deck.swift in Sources */,
 				2B23802B1CFD0AC600116148 /* sets.swift in Sources */,
 				2B2380231CFD07DB00116148 /* characteristics.swift in Sources */,
+				2B2380481D05F8CF00116148 /* mod3.swift in Sources */,
 				2B14379C1CFD0633005B174A /* ViewController.swift in Sources */,
 				2B2380331CFD0C5B00116148 /* building.swift in Sources */,
 				2B23802F1CFD0BF500116148 /* Cube.swift in Sources */,
@@ -419,6 +424,7 @@
 				2B23803E1CFD0EAA00116148 /* building.swift in Sources */,
 				2B23803D1CFD0EA600116148 /* Hypercube.swift in Sources */,
 				2B2380351CFD0CA300116148 /* DeckTests.swift in Sources */,
+				2B2380491D06037400116148 /* mod3.swift in Sources */,
 				2B2380441D008E8F00116148 /* BuildingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

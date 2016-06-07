@@ -20,19 +20,28 @@ class Square {
         if anyMissing {
             return false
         }
-        let rows = formASet(cards[0][0]!, second: cards[0][1]!, third: cards[0][2]!)
-            && formASet(cards[1][0]!, second: cards[1][1]!, third: cards[1][2]!)
-            && formASet(cards[2][0]!, second: cards[2][1]!, third: cards[2][2]!)
-        let columns = formASet(cards[0][0]!, second: cards[1][0]!, third: cards[2][0]!)
-            && formASet(cards[0][1]!, second: cards[1][1]!, third: cards[2][1]!)
-            && formASet(cards[0][2]!, second: cards[1][2]!, third: cards[2][2]!)
-        let leftDiagonals = formASet(cards[0][0]!, second: cards[1][1]!, third: cards[2][2]!)
-            && formASet(cards[0][1]!, second: cards[1][2]!, third: cards[2][0]!)
-            && formASet(cards[0][2]!, second: cards[1][0]!, third: cards[2][1]!)
-        let rightDiagonals = formASet(cards[0][2]!, second: cards[1][1]!, third: cards[2][0]!)
-            && formASet(cards[1][2]!, second: cards[2][1]!, third: cards[0][0]!)
-            && formASet(cards[2][2]!, second: cards[0][1]!, third: cards[1][0]!)
-        return rows && columns && leftDiagonals && rightDiagonals
+
+        let coordinates: [(Int, Int)] =
+            (0...2).flatMap { (row: Int) in
+                (0...2).flatMap { (column: Int) in
+                    return (row, column)
+                }
+            }
         
+        let triples =
+            coordinates.flatMap { (first: (Int, Int)) in
+                coordinates.flatMap { (second: (Int, Int)) in
+                    coordinates.flatMap { (third: (Int, Int)) in
+                        return (first, second, third)
+                    }
+                }
+            }.filter { (first: (Int, Int), second: (Int, Int), third: (Int, Int)) in
+                mod3Plus(first.0, second.0, third.0) == 0
+                    && mod3Plus(first.1, second.1, third.1) == 0
+            }
+
+        return !triples.map { (first: (Int, Int), second: (Int, Int), third: (Int, Int)) in
+            formASet(cards[first.0][first.1]!, cards[second.0][second.1]!, cards[third.0][third.1]!)
+        }.contains(false)
     }
 }

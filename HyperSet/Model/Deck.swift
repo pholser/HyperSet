@@ -31,7 +31,7 @@ final class Deck {
         
         var mismatch: Card? = nil
         while let next = draw() {
-            if !formASet(first, second: second, third: next) {
+            if !formASet(first, second, next) {
                 mismatch = next
                 break
             }

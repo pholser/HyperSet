@@ -1,6 +1,6 @@
 import Foundation
 
-func completionOf(first: Card, second: Card) -> Card {
+func completionOf(first: Card, _ second: Card) -> Card {
     return Card(
         number: Number(rawValue: missingAttribute(first.number.rawValue, second: second.number.rawValue))!,
         shading: Shading(rawValue: missingAttribute(first.shading.rawValue, second: second.shading.rawValue))!,
@@ -9,15 +9,36 @@ func completionOf(first: Card, second: Card) -> Card {
     )
 }
 
-func formASet(first: Card, second: Card, third: Card) -> Bool {
-    return formASet(first.number.rawValue, second: second.number.rawValue, third: third.number.rawValue)
-        && formASet(first.shape.rawValue, second: second.shape.rawValue, third: third.shape.rawValue)
-        && formASet(first.shading.rawValue, second: second.shading.rawValue, third: third.shading.rawValue)
-        && formASet(first.color.rawValue, second: second.color.rawValue, third: third.color.rawValue)
+func setParallelTo(set: (Card, Card, Card), through: Card) -> (Card, Card, Card) {
+    let deltaNumber = set.0.number - through.number
+    let deltaShading = set.0.shading - through.shading
+    let deltaColor = set.0.color - through.color
+    let deltaShape = set.0.shape - through.shape
+
+    return (
+        through,
+        Card(
+            number: set.1.number + deltaNumber,
+            shading: set.1.shading + deltaShading,
+            color: set.1.color + deltaColor,
+            shape: set.1.shape + deltaShape),
+        Card(
+            number: set.2.number + deltaNumber,
+            shading: set.2.shading + deltaShading,
+            color: set.2.color + deltaColor,
+            shape: set.2.shape + deltaShape)
+    )
 }
 
-private func formASet(first: Int, second: Int, third: Int) -> Bool {
-    return (first + second + third) % 3 == 0
+func formASet(first: Card, _ second: Card, _ third: Card) -> Bool {
+    return formASet(first.number.rawValue, second.number.rawValue, third.number.rawValue)
+        && formASet(first.shape.rawValue, second.shape.rawValue, third.shape.rawValue)
+        && formASet(first.shading.rawValue, second.shading.rawValue, third.shading.rawValue)
+        && formASet(first.color.rawValue, second.color.rawValue, third.color.rawValue)
+}
+
+private func formASet(first: Int, _ second: Int, _ third: Int) -> Bool {
+    return mod3Plus(first, second, third) == 0
 }
 
 private func missingAttribute(first: Int, second: Int) -> Int {
