@@ -3,8 +3,12 @@ import XCTest
 class BuildingTests : XCTestCase {
     func testBuildingFirstPlaneFromFullDeck() {
         for _ in 1...100 {
-            let plane = buildFirstPlane(Deck())
+            let deck = Deck()
+
+            let plane = buildFirstPlane(deck)
+
             XCTAssertTrue(plane.isMagic)
+            XCTAssertEqual(deck.cards.count, 72)
         }
     }
 
@@ -16,6 +20,7 @@ class BuildingTests : XCTestCase {
             let parallel = buildSecondPlane(deck, plane)
 
             XCTAssertTrue(parallel.isMagic)
+            XCTAssertEqual(deck.cards.count, 63)
         }
     }
     
@@ -28,16 +33,29 @@ class BuildingTests : XCTestCase {
             let third = buildThirdPlane(deck, first, second)
 
             XCTAssertTrue(third.isMagic)
+            XCTAssertEqual(deck.cards.count, 54)
         }
     }
     
-    func testBuildingCubeFromFullDeck() {
+    func testBuildingFirstCubeFromFullDeck() {
         for _ in 1...100 {
             let deck = Deck()
             
-            let cube = buildCube(deck)
+            let cube = buildFirstCube(deck)
             
             XCTAssertTrue(cube.isMagic)
+            XCTAssertEqual(deck.cards.count, 54)
+        }
+    }
+    
+    func testBuildingHypercubeFromFullDeck() {
+        for _ in 1...10 {
+            let deck = Deck()
+            
+            let hypercube = buildHypercube(deck)
+            
+            XCTAssertTrue(hypercube.isMagic)
+            XCTAssertEqual(deck.cards.count, 0)
         }
     }
 }

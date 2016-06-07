@@ -77,10 +77,27 @@ func buildThirdPlane(deck: Deck, _ first: Square, _ second: Square)
     return third
 }
 
-func buildCube(deck: Deck) -> Cube {
+func buildFirstCube(deck: Deck) -> Cube {
     let first = buildFirstPlane(deck)
     let second = buildSecondPlane(deck, first)
     let third = buildThirdPlane(deck, first, second)
     
     return Cube(first, second, third)
+}
+
+func buildHypercube(deck: Deck) -> Hypercube {
+    let upperCube = buildFirstCube(deck)
+    
+    let midLeft = buildSecondPlane(deck, upperCube.squares[0]!)
+    let lowerLeft = buildThirdPlane(deck, upperCube.squares[0]!, midLeft)
+    let center = buildThirdPlane(deck, lowerLeft, upperCube.squares[2]!)
+    let lowerMid = buildThirdPlane(deck, upperCube.squares[1]!, center)
+    let midRight = buildThirdPlane(deck, midLeft, center)
+    let lowerRight = buildThirdPlane(deck, lowerLeft, lowerMid)
+    
+    return Hypercube(
+        upperCube,
+        Cube(midLeft, center, midRight),
+        Cube(lowerLeft, lowerMid, lowerRight)
+    )
 }
