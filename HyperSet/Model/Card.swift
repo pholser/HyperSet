@@ -18,14 +18,14 @@ final class Card : Hashable {
     }
     
     var hashValue: Int {
+        return index
+    }
+    
+    var index : Int {
         return number.rawValue
             + 3 * shading.rawValue
             + 9 * color.rawValue
             + 27 * shape.rawValue
-    }
-    
-    var coordinates: (Int, Int, Int, Int) {
-        return (number.rawValue, shading.rawValue, color.rawValue, shape.rawValue)
     }
 }
 

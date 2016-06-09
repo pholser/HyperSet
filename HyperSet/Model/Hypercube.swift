@@ -1,7 +1,7 @@
 import Foundation
 
 class Hypercube {
-    var cubes = [Cube?](count: 3, repeatedValue: nil)
+    private var cubes = [Cube?](count: 3, repeatedValue: nil)
     
     init(_ first: Cube, _ second: Cube, _ third: Cube) {
         cubes[0] = first
@@ -10,7 +10,7 @@ class Hypercube {
     }
     
     var isMagic : Bool {
-        if [cubes[0]!.isMagic, cubes[1]!.isMagic, cubes[2]!.isMagic]
+        if [self[0].isMagic, self[1].isMagic, self[2].isMagic]
             .contains(false) {
             return false
         }
@@ -37,10 +37,16 @@ class Hypercube {
         
         return !triples.map { (first: (Int, Int), second: (Int, Int), third: (Int, Int)) in
             Cube(
-                cubes[first.0]!.squares[first.1]!,
-                cubes[second.0]!.squares[second.1]!,
-                cubes[third.0]!.squares[third.1]!)
+                self[first.0][first.1],
+                self[second.0][second.1],
+                self[third.0][third.1])
             .isMagic
         }.contains(false)
+    }
+    
+    subscript(index: Int) -> Cube {
+        get {
+            return cubes[index]!
+        }
     }
 }

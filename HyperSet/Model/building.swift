@@ -13,15 +13,15 @@ func buildFirstPlane(deck: Deck) -> Square {
     let lowerMid = deck.remove(completionOf(upperMid, center))!
     let lowerRight = deck.remove(completionOf(lowerLeft, lowerMid))!
     
-    plane.cards[0][0] = upperLeft
-    plane.cards[0][1] = upperMid
-    plane.cards[0][2] = upperRight
-    plane.cards[1][0] = midLeft
-    plane.cards[1][1] = center
-    plane.cards[1][2] = midRight
-    plane.cards[2][0] = lowerLeft
-    plane.cards[2][1] = lowerMid
-    plane.cards[2][2] = lowerRight
+    plane[0][0] = upperLeft
+    plane[0][1] = upperMid
+    plane[0][2] = upperRight
+    plane[1][0] = midLeft
+    plane[1][1] = center
+    plane[1][2] = midRight
+    plane[2][0] = lowerLeft
+    plane[2][1] = lowerMid
+    plane[2][2] = lowerRight
     
     return plane
 }
@@ -32,13 +32,13 @@ func buildSecondPlane(deck: Deck, _ plane: Square) -> Square {
     let upperLeft = deck.draw()!
     let upper =
         setParallelTo(
-            (plane.cards[0][0]!, plane.cards[0][1]!, plane.cards[0][2]!),
+            (plane[0][0]!, plane[0][1]!, plane[0][2]!),
             through: upperLeft)
     let upperMid = deck.remove(upper.1)!
     let upperRight = deck.remove(upper.2)!
     let left =
         setParallelTo(
-            (plane.cards[0][0]!, plane.cards[1][0]!, plane.cards[2][0]!),
+            (plane[0][0]!, plane[1][0]!, plane[2][0]!),
             through: upperLeft)
     let midLeft = deck.remove(left.1)!
     let lowerLeft = deck.remove(left.2)!
@@ -47,15 +47,15 @@ func buildSecondPlane(deck: Deck, _ plane: Square) -> Square {
     let lowerMid = deck.remove(completionOf(upperMid, center))!
     let lowerRight = deck.remove(completionOf(lowerLeft, lowerMid))!
 
-    parallel.cards[0][0] = upperLeft
-    parallel.cards[0][1] = upperMid
-    parallel.cards[0][2] = upperRight
-    parallel.cards[1][0] = midLeft
-    parallel.cards[1][1] = center
-    parallel.cards[1][2] = midRight
-    parallel.cards[2][0] = lowerLeft
-    parallel.cards[2][1] = lowerMid
-    parallel.cards[2][2] = lowerRight
+    parallel[0][0] = upperLeft
+    parallel[0][1] = upperMid
+    parallel[0][2] = upperRight
+    parallel[1][0] = midLeft
+    parallel[1][1] = center
+    parallel[1][2] = midRight
+    parallel[2][0] = lowerLeft
+    parallel[2][1] = lowerMid
+    parallel[2][2] = lowerRight
 
     return parallel
 }
@@ -67,9 +67,9 @@ func buildThirdPlane(deck: Deck, _ first: Square, _ second: Square)
     
     for row in 0...2 {
         for column in 0...2 {
-            third.cards[row][column] =
+            third[row][column] =
                 deck.remove(
-                    completionOf(first.cards[row][column]!, second.cards[row][column]!)
+                    completionOf(first[row][column]!, second[row][column]!)
                 )!
         }
     }
@@ -88,10 +88,10 @@ func buildFirstCube(deck: Deck) -> Cube {
 func buildHypercube(deck: Deck) -> Hypercube {
     let upperCube = buildFirstCube(deck)
     
-    let midLeft = buildSecondPlane(deck, upperCube.squares[0]!)
-    let lowerLeft = buildThirdPlane(deck, upperCube.squares[0]!, midLeft)
-    let center = buildThirdPlane(deck, lowerLeft, upperCube.squares[2]!)
-    let lowerMid = buildThirdPlane(deck, upperCube.squares[1]!, center)
+    let midLeft = buildSecondPlane(deck, upperCube[0])
+    let lowerLeft = buildThirdPlane(deck, upperCube[0], midLeft)
+    let center = buildThirdPlane(deck, lowerLeft, upperCube[2])
+    let lowerMid = buildThirdPlane(deck, upperCube[1], center)
     let midRight = buildThirdPlane(deck, midLeft, center)
     let lowerRight = buildThirdPlane(deck, lowerLeft, lowerMid)
     

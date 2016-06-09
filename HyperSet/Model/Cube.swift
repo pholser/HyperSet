@@ -1,7 +1,7 @@
 import Foundation
 
 class Cube {
-    var squares = [Square?](count: 3, repeatedValue: nil)
+    private var squares = [Square?](count: 3, repeatedValue: nil)
     
     init(_ first: Square, _ second: Square, _ third: Square) {
         squares[0] = first
@@ -10,7 +10,7 @@ class Cube {
     }
     
     var isMagic : Bool {
-        if [squares[0]!.isMagic, squares[1]!.isMagic, squares[2]!.isMagic]
+        if [self[0].isMagic, self[1].isMagic, self[2].isMagic]
             .contains(false) {
             return false
         }
@@ -39,9 +39,15 @@ class Cube {
         
         return !triples.map { (first: (Int, Int, Int), second: (Int, Int, Int), third: (Int, Int, Int)) in
             formASet(
-                squares[0]!.cards[first.1][first.2]!,
-                squares[1]!.cards[second.1][second.2]!,
-                squares[2]!.cards[third.1][third.2]!)
+                self[0][first.1][first.2]!,
+                self[1][second.1][second.2]!,
+                self[2][third.1][third.2]!)
         }.contains(false)
+    }
+    
+    subscript(index: Int) -> Square {
+        get {
+            return squares[index]!
+        }
     }
 }

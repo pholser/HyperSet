@@ -58,4 +58,20 @@ class BuildingTests : XCTestCase {
             XCTAssertEqual(deck.cards.count, 0)
         }
     }
+    
+    func testShowHypercubeCoordinatesAndCards() {
+        let deck = Deck()
+        
+        let hypercube = buildHypercube(deck)
+
+        for cube in 0...2 {
+            for plane in 0...2 {
+                for row in 0...2 {
+                    for column in 0...2 {
+                        print("\((cube, plane, row, column)): \(hypercube[cube][plane][row][column]!.description)")
+                    }
+                }
+            }
+        }
+    }
 }

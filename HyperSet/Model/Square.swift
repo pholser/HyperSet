@@ -1,7 +1,7 @@
 import Foundation
 
 class Square {
-    var cards = [[Card?]](
+    private var cards = [[Card?]](
         count: 3,
         repeatedValue: [Card?](
             count: 3,
@@ -41,7 +41,19 @@ class Square {
             }
 
         return !triples.map { (first: (Int, Int), second: (Int, Int), third: (Int, Int)) in
-            formASet(cards[first.0][first.1]!, cards[second.0][second.1]!, cards[third.0][third.1]!)
+            formASet(
+                self[first.0][first.1]!,
+                self[second.0][second.1]!,
+                self[third.0][third.1]!)
         }.contains(false)
+    }
+    
+    subscript(index: Int) -> [Card?] {
+        get {
+            return cards[index]
+        }
+        set {
+            cards.insert(newValue, atIndex: index)
+        }
     }
 }
