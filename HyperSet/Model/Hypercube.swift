@@ -15,17 +15,17 @@ class Hypercube {
             return false
         }
 
-        let coordinates: [(Int, Int)] =
-            (0...2).flatMap { (cube: Int) in
-                (0...2).flatMap { (plane: Int) in
+        let coordinates =
+            (0...2).flatMap { cube in
+                (0...2).flatMap { plane in
                     return (cube, plane)
                 }
             }
 
         let triples =
-            coordinates.flatMap { (first: (Int, Int)) in
-                coordinates.flatMap { (second: (Int, Int)) in
-                    coordinates.flatMap { (third: (Int, Int)) in
+            coordinates.flatMap { first in
+                coordinates.flatMap { second in
+                    coordinates.flatMap { third in
                         return (first, second, third)
                     }
                 }
@@ -35,7 +35,7 @@ class Hypercube {
                     && mod3Plus(first.1, second.1, third.1) == 0
             }
         
-        return !triples.map { (first: (Int, Int), second: (Int, Int), third: (Int, Int)) in
+        return !triples.map { (first, second, third) in
             Cube(
                 self[first.0][first.1],
                 self[second.0][second.1],

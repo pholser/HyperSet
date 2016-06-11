@@ -15,19 +15,19 @@ class Cube {
             return false
         }
 
-        let coordinates: [(Int, Int, Int)] =
-            (0...2).flatMap { (plane: Int) in
-                (0...2).flatMap { (row: Int) in
-                    (0...2).flatMap { (column: Int) in
+        let coordinates =
+            (0...2).flatMap { plane in
+                (0...2).flatMap { row in
+                    (0...2).flatMap { column in
                         return (plane, row, column)
                     }
                 }
             }
 
         let triples =
-            coordinates.flatMap { (first: (Int, Int, Int)) in
-                coordinates.flatMap { (second: (Int, Int, Int)) in
-                    coordinates.flatMap { (third: (Int, Int, Int)) in
+            coordinates.flatMap { first in
+                coordinates.flatMap { second in
+                    coordinates.flatMap { third in
                         return (first, second, third)
                     }
                 }
@@ -37,7 +37,7 @@ class Cube {
                     && mod3Plus(first.2, second.2, third.2) == 0
         }
         
-        return !triples.map { (first: (Int, Int, Int), second: (Int, Int, Int), third: (Int, Int, Int)) in
+        return !triples.map { (first, second, third) in
             formASet(
                 self[0][first.1][first.2]!,
                 self[1][second.1][second.2]!,

@@ -21,17 +21,17 @@ class Square {
             return false
         }
 
-        let coordinates: [(Int, Int)] =
-            (0...2).flatMap { (row: Int) in
-                (0...2).flatMap { (column: Int) in
+        let coordinates =
+            (0...2).flatMap { row in
+                (0...2).flatMap { column in
                     return (row, column)
                 }
             }
         
         let triples =
-            coordinates.flatMap { (first: (Int, Int)) in
-                coordinates.flatMap { (second: (Int, Int)) in
-                    coordinates.flatMap { (third: (Int, Int)) in
+            coordinates.flatMap { first in
+                coordinates.flatMap { second in
+                    coordinates.flatMap { third in
                         return (first, second, third)
                     }
                 }
@@ -40,7 +40,7 @@ class Square {
                     && mod3Plus(first.1, second.1, third.1) == 0
             }
 
-        return !triples.map { (first: (Int, Int), second: (Int, Int), third: (Int, Int)) in
+        return !triples.map { (first, second, third) in
             formASet(
                 self[first.0][first.1]!,
                 self[second.0][second.1]!,
