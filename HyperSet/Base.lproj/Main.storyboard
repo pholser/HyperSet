@@ -263,6 +263,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cst-VA-dJU">
                                 <rect key="frame" x="189" y="508" width="203" height="30"/>
                                 <state key="normal" title="Generate Hypercube"/>
+                                <connections>
+                                    <action selector="onGenerateClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OqL-ab-QiB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -349,7 +352,6 @@
                         <outlet property="card8" destination="kiK-KY-YXV" id="3u2-0L-XpS"/>
                         <outlet property="card80" destination="uK4-b2-FYQ" id="k3g-h6-Jsy"/>
                         <outlet property="card9" destination="z6W-jM-tLo" id="Y2Z-KT-QGL"/>
-                        <outlet property="generateButton" destination="cst-VA-dJU" id="mGX-as-svM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

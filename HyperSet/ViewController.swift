@@ -103,6 +103,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var generateButton: UIButton!
     
+    @IBAction func onGenerateClick(sender: UIButton) {
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
