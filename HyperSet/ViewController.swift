@@ -7,16 +7,13 @@ class ViewController : UIViewController {
     @IBOutlet weak private var generateButton: UIButton!
 
     private var highlightTimer: NSTimer?
-    private var lastHighlightedCoordinates: (Int, Int, Int)?
-    private var setCoordinates: [(Int, Int, Int)]
+    private var lastHighlightedCoordinates:
+        ((Int, Int, Int, Int), (Int, Int, Int, Int), (Int, Int, Int, Int))?
+    private var setCoordinates:
+        [((Int, Int, Int, Int), (Int, Int, Int, Int), (Int, Int, Int, Int))]
 
     required init?(coder aDecoder: NSCoder) {
         setCoordinates = coordinatesOfSets()
-            .map { (cardViewCoordinate($0.0),
-                cardViewCoordinate($0.1),
-                cardViewCoordinate($0.2))
-            }
-
         super.init(coder: aDecoder)
     }
 
@@ -74,7 +71,7 @@ class ViewController : UIViewController {
                 1.5,
                 target: self,
                 selector: #selector(highlightASet),
-                userInfo: nil,
+                userInfo: hypercube,
                 repeats: true)
     }
 
@@ -92,18 +89,26 @@ class ViewController : UIViewController {
         slot.layer.borderColor = UIColor.blackColor().CGColor
     }
     
-    func highlightASet() {
+    func highlightASet(timer: NSTimer!) {
         if let c = lastHighlightedCoordinates {
-            unhighlightCardSlot(cardSlots[c.0])
-            unhighlightCardSlot(cardSlots[c.1])
-            unhighlightCardSlot(cardSlots[c.2])
+            unhighlightCardSlot(cardSlots[cardViewCoordinate(c.0)])
+            unhighlightCardSlot(cardSlots[cardViewCoordinate(c.1)])
+            unhighlightCardSlot(cardSlots[cardViewCoordinate(c.2)])
         }
-        
+
+        let hypercube = timer.userInfo as! Hypercube
         let next = setCoordinates.randomItem()
+        assert(
+            formASet(
+                hypercube[next.0.0][next.0.1][next.0.2][next.0.3]!,
+                hypercube[next.1.0][next.1.1][next.1.2][next.1.3]!,
+                hypercube[next.2.0][next.2.1][next.2.2][next.2.3]!
+            )
+        )
         
-        highlightCardSlot(cardSlots[next.0])
-        highlightCardSlot(cardSlots[next.1])
-        highlightCardSlot(cardSlots[next.2])
+        highlightCardSlot(cardSlots[cardViewCoordinate(next.0)])
+        highlightCardSlot(cardSlots[cardViewCoordinate(next.1)])
+        highlightCardSlot(cardSlots[cardViewCoordinate(next.2)])
         lastHighlightedCoordinates = next
     }
 }

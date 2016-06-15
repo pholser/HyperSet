@@ -130,5 +130,6 @@ func coordinatesOfSets()
             && mod3Plus(first.0, second.0, third.0) == 0
             && mod3Plus(first.1, second.1, third.1) == 0
             && mod3Plus(first.2, second.2, third.2) == 0
+            && mod3Plus(first.3, second.3, third.3) == 0
     }
 }
