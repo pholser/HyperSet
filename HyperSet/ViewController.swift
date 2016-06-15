@@ -3,7 +3,7 @@ import UIKit
 class ViewController : UIViewController {
     // MARK: Properties
 
-    @IBOutlet var cardSlots: [UIImageView]!
+    @IBOutlet private var cardSlots: [UIImageView]!
     @IBOutlet weak private var generateButton: UIButton!
     
     @IBAction func onGenerateClick(sender: UIButton) {
