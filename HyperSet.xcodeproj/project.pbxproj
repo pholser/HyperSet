@@ -37,6 +37,7 @@
 		2B2380441D008E8F00116148 /* BuildingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380431D008E8F00116148 /* BuildingTests.swift */; };
 		2B2380481D05F8CF00116148 /* mod3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380471D05F8CF00116148 /* mod3.swift */; };
 		2B2380491D06037400116148 /* mod3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380471D05F8CF00116148 /* mod3.swift */; };
+		2B46BC9D1D11CFB2007FD581 /* card_images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46BC9C1D11CFB2007FD581 /* card_images.swift */; };
 		88A76EEE6C67B189D188D7C3 /* Pods_HyperSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF768B93F18EEFC5EF41604 /* Pods_HyperSet.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		2B2380411CFD133A00116148 /* Card_arbitrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_arbitrary.swift; sourceTree = "<group>"; };
 		2B2380431D008E8F00116148 /* BuildingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTests.swift; sourceTree = "<group>"; };
 		2B2380471D05F8CF00116148 /* mod3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mod3.swift; sourceTree = "<group>"; };
+		2B46BC9C1D11CFB2007FD581 /* card_images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = card_images.swift; sourceTree = "<group>"; };
 		5C141EB41385AA3FDDF30A30 /* Pods-HyperSetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSetTests/Pods-HyperSetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		69D76C6D1861DB3E71F2C81F /* Pods-HyperSetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSetTests/Pods-HyperSetTests.release.xcconfig"; sourceTree = "<group>"; };
 		732FC067024756D5C394D592 /* Pods-HyperSet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSet/Pods-HyperSet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				2B1437A01CFD0633005B174A /* Assets.xcassets */,
 				2B1437A21CFD0633005B174A /* LaunchScreen.storyboard */,
 				2B1437A51CFD0633005B174A /* Info.plist */,
+				2B46BC9C1D11CFB2007FD581 /* card_images.swift */,
 			);
 			path = HyperSet;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				2B2380231CFD07DB00116148 /* characteristics.swift in Sources */,
 				2B2380481D05F8CF00116148 /* mod3.swift in Sources */,
 				2B14379C1CFD0633005B174A /* ViewController.swift in Sources */,
+				2B46BC9D1D11CFB2007FD581 /* card_images.swift in Sources */,
 				2B2380331CFD0C5B00116148 /* building.swift in Sources */,
 				2B23802F1CFD0BF500116148 /* Cube.swift in Sources */,
 				2B2380271CFD0A4700116148 /* Card.swift in Sources */,

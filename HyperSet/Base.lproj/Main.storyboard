@@ -260,10 +260,18 @@
                             <imageView userInteractionEnabled="NO" tag="80" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uK4-b2-FYQ" userLabel="Card80">
                                 <rect key="frame" x="527" y="420" width="48" height="31"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocq-9L-R5P">
+                                <rect key="frame" x="229" y="503" width="143" height="30"/>
+                                <state key="normal" title="Generate Hypercube"/>
+                                <connections>
+                                    <action selector="onGenerateClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lo9-WJ-0Hh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="generateButton" destination="Ocq-9L-R5P" id="h2W-NU-WgA"/>
                         <outletCollection property="cardSlots" destination="X3L-ep-aoZ" collectionClass="NSMutableArray" id="oiP-oF-nuT"/>
                         <outletCollection property="cardSlots" destination="t4h-VS-Iv4" collectionClass="NSMutableArray" id="cHQ-W0-eV1"/>
                         <outletCollection property="cardSlots" destination="LMB-gM-4zu" collectionClass="NSMutableArray" id="jle-Xa-Zui"/>
