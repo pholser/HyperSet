@@ -14,7 +14,7 @@
 		2B1437A11CFD0633005B174A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1437A01CFD0633005B174A /* Assets.xcassets */; };
 		2B1437A41CFD0633005B174A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1437A21CFD0633005B174A /* LaunchScreen.storyboard */; };
 		2B2380231CFD07DB00116148 /* characteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380221CFD07DB00116148 /* characteristics.swift */; };
-		2B2380251CFD087800116148 /* set_extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380241CFD087800116148 /* set_extensions.swift */; };
+		2B2380251CFD087800116148 /* randomness_extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380241CFD087800116148 /* randomness_extensions.swift */; };
 		2B2380271CFD0A4700116148 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380261CFD0A4700116148 /* Card.swift */; };
 		2B2380291CFD0A7800116148 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380281CFD0A7800116148 /* Deck.swift */; };
 		2B23802B1CFD0AC600116148 /* sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23802A1CFD0AC600116148 /* sets.swift */; };
@@ -26,7 +26,7 @@
 		2B2380361CFD0D4700116148 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380281CFD0A7800116148 /* Deck.swift */; };
 		2B2380371CFD0D7100116148 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380261CFD0A4700116148 /* Card.swift */; };
 		2B2380381CFD0E4E00116148 /* characteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380221CFD07DB00116148 /* characteristics.swift */; };
-		2B2380391CFD0E6A00116148 /* set_extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380241CFD087800116148 /* set_extensions.swift */; };
+		2B2380391CFD0E6A00116148 /* randomness_extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380241CFD087800116148 /* randomness_extensions.swift */; };
 		2B23803A1CFD0E9D00116148 /* sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23802A1CFD0AC600116148 /* sets.swift */; };
 		2B23803B1CFD0EA000116148 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23802C1CFD0BE400116148 /* Square.swift */; };
 		2B23803C1CFD0EA300116148 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23802E1CFD0BF500116148 /* Cube.swift */; };
@@ -38,6 +38,7 @@
 		2B2380481D05F8CF00116148 /* mod3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380471D05F8CF00116148 /* mod3.swift */; };
 		2B2380491D06037400116148 /* mod3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2380471D05F8CF00116148 /* mod3.swift */; };
 		2B46BC9D1D11CFB2007FD581 /* card_images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46BC9C1D11CFB2007FD581 /* card_images.swift */; };
+		2B46BC9F1D11F106007FD581 /* card_coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46BC9E1D11F106007FD581 /* card_coordinates.swift */; };
 		88A76EEE6C67B189D188D7C3 /* Pods_HyperSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF768B93F18EEFC5EF41604 /* Pods_HyperSet.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +64,7 @@
 		2B1437AA1CFD0633005B174A /* HyperSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1437B01CFD0633005B174A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B2380221CFD07DB00116148 /* characteristics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = characteristics.swift; sourceTree = "<group>"; };
-		2B2380241CFD087800116148 /* set_extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = set_extensions.swift; sourceTree = "<group>"; };
+		2B2380241CFD087800116148 /* randomness_extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomness_extensions.swift; sourceTree = "<group>"; };
 		2B2380261CFD0A4700116148 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2B2380281CFD0A7800116148 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		2B23802A1CFD0AC600116148 /* sets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sets.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		2B2380431D008E8F00116148 /* BuildingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTests.swift; sourceTree = "<group>"; };
 		2B2380471D05F8CF00116148 /* mod3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mod3.swift; sourceTree = "<group>"; };
 		2B46BC9C1D11CFB2007FD581 /* card_images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = card_images.swift; sourceTree = "<group>"; };
+		2B46BC9E1D11F106007FD581 /* card_coordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = card_coordinates.swift; sourceTree = "<group>"; };
 		5C141EB41385AA3FDDF30A30 /* Pods-HyperSetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSetTests/Pods-HyperSetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		69D76C6D1861DB3E71F2C81F /* Pods-HyperSetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSetTests/Pods-HyperSetTests.release.xcconfig"; sourceTree = "<group>"; };
 		732FC067024756D5C394D592 /* Pods-HyperSet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperSet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperSet/Pods-HyperSet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				2B1437A21CFD0633005B174A /* LaunchScreen.storyboard */,
 				2B1437A51CFD0633005B174A /* Info.plist */,
 				2B46BC9C1D11CFB2007FD581 /* card_images.swift */,
+				2B46BC9E1D11F106007FD581 /* card_coordinates.swift */,
 			);
 			path = HyperSet;
 			sourceTree = "<group>";
@@ -152,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2380221CFD07DB00116148 /* characteristics.swift */,
-				2B2380241CFD087800116148 /* set_extensions.swift */,
+				2B2380241CFD087800116148 /* randomness_extensions.swift */,
 				2B2380261CFD0A4700116148 /* Card.swift */,
 				2B2380281CFD0A7800116148 /* Deck.swift */,
 				2B23802A1CFD0AC600116148 /* sets.swift */,
@@ -406,9 +409,10 @@
 				2B2380331CFD0C5B00116148 /* building.swift in Sources */,
 				2B23802F1CFD0BF500116148 /* Cube.swift in Sources */,
 				2B2380271CFD0A4700116148 /* Card.swift in Sources */,
-				2B2380251CFD087800116148 /* set_extensions.swift in Sources */,
+				2B2380251CFD087800116148 /* randomness_extensions.swift in Sources */,
 				2B14379A1CFD0633005B174A /* AppDelegate.swift in Sources */,
 				2B2380311CFD0C1800116148 /* Hypercube.swift in Sources */,
+				2B46BC9F1D11F106007FD581 /* card_coordinates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B23803A1CFD0E9D00116148 /* sets.swift in Sources */,
-				2B2380391CFD0E6A00116148 /* set_extensions.swift in Sources */,
+				2B2380391CFD0E6A00116148 /* randomness_extensions.swift in Sources */,
 				2B2380401CFD0FB800116148 /* SetsTests.swift in Sources */,
 				2B2380381CFD0E4E00116148 /* characteristics.swift in Sources */,
 				2B2380421CFD133A00116148 /* Card_arbitrary.swift in Sources */,

@@ -101,3 +101,34 @@ func buildHypercube(deck: Deck) -> Hypercube {
         Cube(lowerLeft, lowerMid, lowerRight)
     )
 }
+
+func coordinatesOfSets()
+    -> [((Int, Int, Int, Int), (Int, Int, Int, Int), (Int, Int, Int, Int))] {
+
+    let coordinates =
+        (0...2).flatMap { cube in
+            (0...2).flatMap { plane in
+                (0...2).flatMap { row in
+                    (0...2).flatMap { column in
+                        return (cube, plane, row, column)
+                    }
+                }
+            }
+        }
+        
+    let triples =
+        coordinates.flatMap { first in
+            coordinates.flatMap { second in
+                coordinates.flatMap { third in
+                    return (first, second, third)
+                }
+            }
+        }
+    
+    return triples.filter { first, second, third in
+        first != second && first != third && second != third
+            && mod3Plus(first.0, second.0, third.0) == 0
+            && mod3Plus(first.1, second.1, third.1) == 0
+            && mod3Plus(first.2, second.2, third.2) == 0
+    }
+}
